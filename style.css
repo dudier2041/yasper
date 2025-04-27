@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.barras{display: none;}
+.desplegable{background: orange}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+}
+ul li a{  color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+nav ul li:hover{background: #ff5722; }
+@media (max-width: 850px) {
+.barras{
+    background-color: greenyellow;
+    display: block;
+}
+.desplegable{
+    background: none;
+    transform: translate(-100%);
+    transition: 0.5s;
+    font-size: 1.5rem;
+    width: 50%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a{
+    padding: 0;
+}
+a{
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+    display: block;
+    text-align: center;
+}
+.boton_menu{
+    background-image: url(icono_menu.jpeg);
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+button{
+    margin: 5px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+}
+.abrir_menu{
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(2px);
+    transform: translate(0%);
+    width: 50%;
+    transition: 0.5s;
+}
+.colocar_x{
+    background-image: url(icono_menu.jpeg);
+    background-color: #1e1e1e;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+@media (max-width: 500px){
+    .desplegable{
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;
+    }
+}
+}
+.titulo{
+    color:yellow;
+}
+.intro {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  .hero {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.proyecto {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto h2 {
+    margin: 1rem;
+    font-size: 1.4rem;
+    color: #ff7f00;
+}
+
+.proyecto p {
+    margin: 0 1rem 1rem;
+}
+header h1 {
+    font-size: 2rem;
+    color: #742305;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: #742305;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #742305;
+  }
+  
+  .contacto p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  form button {
+    padding: 12px;
+    background-color: #742305;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #a94419;
+  }
+  
