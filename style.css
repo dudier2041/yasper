@@ -96,6 +96,32 @@ button{
 .titulo{
     color:yellow;
 }
+.hero { 
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px orange;
+}
+h2{
+  color: blue;
+}
+p{
+  color: blue;
+  font-size: 25px;
+}
+h1{
+  color: blue;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
 .intro {
     padding: 20px;
     text-align: center;
